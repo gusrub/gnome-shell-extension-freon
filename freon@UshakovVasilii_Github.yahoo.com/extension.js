@@ -345,7 +345,7 @@ var FreonMenuButton = new Lang.Class({
             let sum = 0;
             let max = 0;
             for (let i of tempInfo){
-                if(i.temp !== null){
+                if(isNaN(i.temp) == false){
                     total++;
     	            sum += i.temp;
     	            if (i.temp > max)
